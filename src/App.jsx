@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemListContainer from './components/itemListContainer/itemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
