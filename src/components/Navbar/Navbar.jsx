@@ -1,6 +1,7 @@
 import React from 'react';
 import Cartwidget from '../Cartwidget/Cartwidget';
 import './Navbar.css';
+import {Link, NavLink} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,9 @@ const Navbar = () => {
             className="d-inline-block align-top"
             alt="Licorstore Logo"
           />
-          LiquorStore
+          <Link to="/" > 
+          Liquorstore
+          </Link>
         </a>
 
         <button
@@ -33,27 +36,37 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <a className="nav-link" href="#">
+                <NavLink to="/categoria/1">
                 Vinos
+                </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+                <NavLink to="/categoria/2">
                 Whiskies
+                </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+                <NavLink to="/categoria/3">
                 Gin
+                </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
+                <NavLink to="/categoria/4">
                 Cervezas
+                </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Aperitivos
+                <NavLink  to="/categoria/5">
+                Bebidas Blancas
+                </NavLink>
               </a>
             </li>
           </ul>
